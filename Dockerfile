@@ -9,3 +9,5 @@ RUN chown -R jenkins:jenkins /jenkins/.ssh
 RUN chmod 700 /jenkins/.ssh
 RUN chmod 600 /jenkins/.ssh/authorized_keys
 EXPOSE 22
+RUN ssh-keygen -f /etc/ssh/ssh_host_rsa_key -N '' -t rsa
+RUN ssh-keygen -f /etc/ssh/ssh_host_dsa_key -N '' -t dsa
