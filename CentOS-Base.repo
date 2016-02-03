@@ -13,3 +13,8 @@ baseurl=http://vault.centos.org/centos/7.0.1406/updates/$basearch/
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 
+[extras]
+name=CentOS-$releasever - Extras
+baseurl=http://vault.centos.org/centos/7.0.1406/extras/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
