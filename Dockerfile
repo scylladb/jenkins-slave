@@ -9,3 +9,4 @@ COPY authorized_keys /jenkins/.ssh/
 RUN chown -R jenkins:jenkins /jenkins/.ssh
 RUN chmod 700 /jenkins/.ssh
 RUN chmod 600 /jenkins/.ssh/authorized_keys
+EXPOSE 22
