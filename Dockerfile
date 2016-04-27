@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 RUN apt-get -y update
 RUN apt-get -y upgrade
 RUN apt-get -y install default-jre openssh-server sudo
