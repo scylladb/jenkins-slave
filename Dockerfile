@@ -1,6 +1,5 @@
-FROM centos:7.0.1406
-COPY CentOS-Base.repo /etc/yum.repos.d/
-RUN yum -y install java-1.7.0-openjdk-headless openssh-server sudo git openssh-clients sed
+FROM centos:7
+RUN yum -y install java-1.8.0-openjdk-headless openssh-server sudo git openssh-clients sed
 RUN useradd -G wheel -d /jenkins -m jenkins
 RUN echo 'jenkins ALL=(ALL:ALL) NOPASSWD: ALL' >> /etc/sudoers
 RUN mkdir /jenkins/.ssh
