@@ -1,4 +1,4 @@
-FROM centos:7.0.1406
+FROM centos:7.2.1511
 COPY CentOS-Base.repo /etc/yum.repos.d/
 RUN yum -y install java-1.7.0-openjdk-headless openssh-server sudo git openssh-clients sed
 RUN useradd -G wheel -d /jenkins -m jenkins
